@@ -82,9 +82,12 @@ const Newproducts = () => {
                     <option value={'Select'}>Select</option>
                     <option value={'Fruits'}>Fruits</option>
                     <option value={'Vegetables'}>Vegetables</option>
+                    <option value={'Cooking Essentials'}>Cooking Essentials</option>
                     <option value={'Icecreams'}>Icecreams</option>
                     <option value={'Cake'}>Cake</option>
                     <option value={'Healthcare'}>Healthcare</option>
+
+
                 </select>
 
                 <label htmlFor='image'>Image
