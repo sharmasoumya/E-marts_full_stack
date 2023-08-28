@@ -4,6 +4,7 @@ import bikeDElivery from '../assets/motorbike-food-delivery-service-online-order
 import HomeCart from '../components/homeCart'
 import { useSelector } from 'react-redux'
 import CardFeatures from '../components/cardFeatures'
+import { GrPrevious, GrNext } from 'react-icons/gr'
 
 const Home = () => {
     const productData = useSelector((state) => state.product.productList)
@@ -57,8 +58,14 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className='m-2'>
-                <h2 className='text-xl text-black font-semibold mb-3'>Fresh Vegetables</h2>
+            <div>
+                <div className='m-1 flex w-full items-center'>
+                    <h2 className='text-xl text-black font-semibold mb-3'>Fresh Vegetables</h2>
+                    <div className='ml-auto flex gap-4 mr-2'>
+                        <button className='bg-slate-300 hover:bg-slate-400 text-lg p-1'>< GrPrevious /> </button>
+                        <button className='bg-slate-300 hover:bg-slate-400 text-lg p-1'>< GrNext /></button>
+                    </div>
+                </div>
                 <div className='flex gap-5 overflow-scroll'>
                     {
                         homecartListVegetables.map(el => {
@@ -79,6 +86,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
